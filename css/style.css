@@ -1,0 +1,225 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Black.otf');
+}
+
+@font-face {
+    font-family: 'Gotham-lg';
+    src: url('../fonts/Gotham-Light.otf');
+}
+
+body {
+    font-family: 'Gotham', sans-serif;
+    font-size: 1.6rem;
+    background-image: url(../img/background.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+
+/* ----------- GLOBAL ------------ */
+
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+
+/* ----------- WEB ---------------- */
+
+
+/* .container-back {
+    height: 100%;
+    background: url(../img/background.jpg);
+    background-repeat: repeat-y;
+} 
+
+@media (min-width: 768px) {
+    .container-back {
+        height: 100%;
+    }
+} */
+
+
+/* --------------- HEADER ----------------*/
+
+.content-header.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #fff;
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .content-header.inicio {
+        flex-direction: row;
+    }
+}
+
+.logo {
+    flex: 0 0 calc(15%);
+}
+
+.navegacion {
+    flex: 0 0 calc(85% - 8rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.navegacion a {
+    font-size: 1.6rem;
+    font-family: 'Gotham-lg';
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        padding: 0;
+    }
+    .navegacion a {
+        font-size: 2rem;
+    }
+}
+
+.navegacion a:hover {
+    color: #bebebe;
+}
+
+
+/* ------------------- CONTENT ----------------- */
+
+.container-flex-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    margin-top: 3rem;
+    order: 3;
+}
+
+@media (min-width: 768px) {
+    .container-flex-content {
+        flex-direction: row;
+    }
+    .col-1 {
+        margin: 0;
+        flex: 0 0 calc(20% - 4rem);
+        order: -3;
+    }
+    .col-2 {
+        flex: 0 0 calc(40% - 4rem);
+    }
+    .col-3 {
+        flex: 0 0 calc(40% - 4rem);
+    }
+}
+
+
+/* ---------------------- SOCIAL --------------------------*/
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-btn {
+    flex: 0 0 calc(50% - 1rem);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .social {
+        flex-direction: column;
+    }
+    .social-btn {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .img-social {
+        flex: 0 0 20%;
+        margin-right: 2rem;
+    }
+    .text-social {
+        flex: 0 0 80%;
+    }
+}
+
+
+/* -------------------- VIDEOS ---------------- */
+
+.video {
+    margin-bottom: 2rem;
+}
+
+
+/* ------------------- PAGINAS INTERNAS ---------- */
+
+.col-1-event {
+    flex: 0 0 calc(75% - 2rem);
+}
+
+.col-2-event {
+    flex: 0 0 calc(25% - 2rem);
+}
+
+.col-1-event p {
+    color: #fff;
+    font-family: 'Gotham-lg';
+    font-size: 2rem;
+}
+
+span {
+    font-family: 'Gotham', sans-serif;
+}
+
+.precio {
+    font-family: 'Gotham', sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    text-align: right;
+    padding-top: 10rem;
+}
